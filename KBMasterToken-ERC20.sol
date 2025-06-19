@@ -39,13 +39,10 @@ contract KBMasterToken is IERC20 {
     event TokensWithdrawn(address indexed to, uint256 amount);
     event ContractBalanceChecked(uint256 balance);
 
-    constructor(uint256 initialSupply) {
-        require(
-            initialSupply > 0,
-            "KBMT: Initial supply must be greater than 0"
-        );
+    uint256 public constant initialSupply = 10000000; 
 
-        totalSupply = initialSupply * 10 ** decimals;
+    constructor() {
+        totalSupply = initialSupply * 10 ** decimals; 
 
         uint256 deployerTokens = totalSupply / 100; // 1%
         uint256 contractTokens = totalSupply - deployerTokens; // 99%
