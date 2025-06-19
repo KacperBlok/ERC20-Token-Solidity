@@ -1,4 +1,5 @@
-# KBMasterToken (KBMT) - Zdecentralizowany token ERC-20
+# KBMasterToken (KBMT)  
+Zdecentralizowany token ERC-20
 
 ## 📋 Podstawowe informacje
 
